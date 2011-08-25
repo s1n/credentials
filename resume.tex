@@ -1,0 +1,235 @@
+\documentclass{scrartcl}
+\usepackage[lmargin=1.5cm, rmargin=2.5cm, tmargin=1.5cm, bmargin=1.5cm, noheadfoot]{geometry}
+\usepackage{parcolumns}
+\usepackage{lipsum}
+\usepackage[mathscr]{euscript}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{textcomp}
+
+\usepackage{fontspec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine}
+
+%fix the links so they are both printable and clickable.
+\usepackage{hyperref}
+\hypersetup{
+   colorlinks,
+   citecolor=black,
+   filecolor=black,
+   linkcolor=black,
+   urlcolor=blue
+}
+\urlstyle{same}
+
+\usepackage{multirow}
+\begin{document}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parsep}{0in}
+\pagestyle{empty}
+
+\newcommand{\expert}[1]{\mdseries\itshape{#1}}
+\newcommand{\citembullet}{$\diamond$}
+
+\begin{center}
+\begin{tabular}{c|c|c}
+\multicolumn{3}{c}{{\sc\bfseries\Huge Jason Michael Switzer}}\tabularnewline
+Software Engineer & \href{mailto:jswitzer@gmail.com}{jswitzer@gmail.com} & \href{http://www.voidreturn.com}{voidreturn.com}\tabularnewline
+\end{tabular}
+\end{center}
+
+\fontencoding{OT1}\fontfamily{ptm}%
+\fontsize{11}{12}\selectfont
+\par \
+\begin{parcolumns}[rulebetween=false,colwidths={1=.12\linewidth,3=0.08\linewidth},nofirstindent]{3}
+\colchunk[1]{\sc\bfseries Qualification\\Summary}
+\colchunk[2]{%
+A highly motivated and detailed Software Engineer with a wide range of knowledge and capabilities. Master level knowledge of machine learning, intelligent systems, scalable distributed systems, multi-threaded environments, dead-lock avoidance, user interface design, and object oriented design patterns, and defect containment. Experienced in all aspects of the development life-cycle, including project estimation, design, implementation, documentation, regression unit testing, deployment, and legacy maintenance.
+\\
+
+{\em Areas of expertise include:}
+\begin{itemize}
+   \item Machine Learning.
+   \item User Interface Design \& Implementation.
+   \item High Performance Computing.
+   \item Code Analysis and Optimization.
+   \item Multi-tier Enterprise Application Design \& Implementation.
+   \item Passionate and dedicated to the art of software engineering. Flexible, quick learner, and team player.
+\end{itemize}
+\par \
+}
+\colplacechunks
+\colchunk[1]{{\sc\bfseries Technical\\Skills}\\ \\ {\expert denotes \\ specialty}}
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=1.9cm, topsep=0cm, style=nextline]
+\item[Languages] {\expert C}, {\expert C++}, {\expert Perl}, {\expert Java (1.4+)}, Markup (XML, HTML), \LaTeX, SQL, Python, C\#, Assembly (MIPS), Lua, ASP.Net, UML.
+\item[Theory] {\expert Qt}, Motif, Xlib, GTK+, {\expert boost}, {\expert pthreads}, OpenMP, MPI, .NET, JDK, {\expert Coverity}, JUnit, {\expert RMI}, {\expert Perl \& CPAN}, Perl/Tk, libogg, libflac, {\expert JNI}, {\expert POSIX}, J2EE, libpcap, cmake, Mudflap.
+\item[Toolkits] {\expert Network programming}, {\expert Multi-threadeding}, Security analysis, detection and prevention, Linux kernel module development, {\expert Linux / POSIX compliance}, {\expert Model-View-Controller design}, {\expert Machine learning / data mining}, {\expert Natural Language Processing}, {\expert Statistical reasoning}, {\expert Object-oriented design patterns}, Stenography, Regression \& unit testing, {\expert Technical documentation}, {\expert Debugging tools (gdb, valgrind, etc)}, {\expert CMMI development lifecycle}, {\expert Defect containment \& prevention}.
+\end{itemize}
+\setlength{\parskip}{\baselineskip}
+\par \
+}
+\colplacechunks
+\colchunk[1]{\sc\bfseries Education}
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=0cm, topsep=0cm, partopsep=0cm, listparindent=0cm, style=nextline]
+\item[\textbullet] University of Texas at Dallas\\
+M.Sc. in Computer Science - Intelligent Systems Track\\
+Thesis: {\em Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora.}
+\end{itemize}
+\par \ 
+}
+\colchunk[3]{\it\small December 2010}
+\colplacechunks
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=0cm, topsep=0cm, partopsep=0cm, listparindent=0cm, style=nextline]
+\item[\textbullet] University of Texas at San Antonio\\
+B.Sc. in Computer Science\\
+College of Sciences Dean's List: Fall 2003. Honor Roll: Spring 2004
+\end{itemize}
+\setlength{\parskip}{\baselineskip}
+\par \
+}
+\colchunk[3]{\it\small August 2005}
+\colplacechunks
+\colchunk[1]{\sc\bfseries Experience}
+\colchunk[2]{%
+{\bf Senior Software Engineer}\\
+L-3 Communications -- Mission Integration Systems\\
+\begin{itemize}
+\item Core developer on the Tactical Reconnaissance platform (over 3 million SLOC). Operator workstation responsible for interfacing directly and indirectly to all hardware on the aircraft.
+\item Developer on wide variety of products, including operator workstation, high speed recording platform (patent pending), signal analysis platform, optics recording platform, and COTS bench test system.
+\item Collaborate with a large team and a code-base focusing on Human/Computer Interaction data collection and analysis products.
+\item Architect of a new Java/JNI development toolkit bridging the vast legacy code-base, allowing for the network centric control platforms connecting airborne platforms to ground-based systems.
+\item Member of the charter team leading CMMI Level 5 compliance.
+\item Spearheaded company-wide defect containment compliance via Coverity static analysis and unit/functional testing.
+%FIXME need to gather real metrics
+%\item Reduced defect density by FIXME\% yearly. Reduced out-of-phase defects by FIXME\% yearly.
+\par \
+\end{itemize}
+}
+\colchunk[3]{\it\small 2005 - present}
+\colplacechunks
+\colchunk[2]{%
+{\bf System Analyst}\\
+Secorp Technologies\\
+\begin{itemize} 
+\item Designed and implemented multi-tiered enterprise-level applications.
+\item Project Lead for a small team -- responsible for primary technical decisions.
+\item Designed, developed, and maintained a custom data access layer above ADO.NET.
+\item Initiated project transition to C\# and the .NET Architecture.
+\end{itemize}
+\par \
+}
+\colchunk[3]{\it\small 2003 - 2005}
+\colplacechunks
+\colchunk[1]{\bfseries Publication}
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=0cm, topsep=0cm, partopsep=0cm, listparindent=0cm, style=nextline]
+\item[\textbullet] Switzer, Jason, Latifur Khan, Fahad Bin Muhaya. 2011. {\it Subjectivity Classification and Analysis of the ASRS Corpus.} In IEEE Society of Information Reuse and Integration, pages 136-141.\\
+Full Text: \url{http://www.voidreturn.com/pubs/IEEE\_IRI.pdf}.
+\par \
+\end{itemize}
+}
+\colchunk[3]{\it\small August 2011}
+\colplacechunks
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=0cm, topsep=0cm, partopsep=0cm, listparindent=0cm, style=nextline]
+\item[\textbullet] Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora\\
+Full Text: \url{http://www.voidreturn.com/pubs/SSCaAJHC.pdf}.\\
+Abstract: \url{http://www.voidreturn.com/pubs/SSCaAJHC\_Abstract.pdf}.
+\end{itemize}
+%\setlength{\parskip}{\baselineskip}
+\par \
+}
+\colchunk[3]{\it\small December 2010}
+\colplacechunks
+\colchunk[1]{\bfseries Research}
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=0cm, topsep=0cm, partopsep=0cm, listparindent=0cm, style=nextline]
+\item[\textbullet] {\it Thesis:} Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora.\\
+{\it Advisor:} Dr. Latifur Khan.\\
+{\it Topic:} Natural Language Processing, Clustering, Subjectivity Classification, WordNet.
+\par \
+\end{itemize}
+}
+\colchunk[3]{\it\small Fall 2010}
+\colplacechunks
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=0cm, topsep=0cm, partopsep=0cm, listparindent=0cm, style=nextline]
+\item[\textbullet] Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora.\\
+Full Text: \url{http://www.voidreturn.com/pubs/SSCaAJHC.pdf}.\\
+Abstract: \url{http://www.voidreturn.com/pubs/SSCaAJHC\_Abstract.pdf}.
+\par \
+\end{itemize}
+}
+\colchunk[3]{\it\small Submitted Fall 2010}
+\colplacechunks
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=0cm, topsep=0cm, partopsep=0cm, listparindent=0cm, style=nextline]
+\item[\textbullet] {\it Independent Study:} Parallelization of Sparse Matrix Multiplication\\
+{\it Advisor:} Dr. Rajendra V. Boppana\\
+{\it Uncredited publication:} E. Brookes, R. V. Boppana and B. Demeler, Computing Large Sparse Multivariate Optimization Problems with an Application in Biophysics, Supercomputing, Nov. 2006.
+\par \ 
+\end{itemize}
+}
+\colchunk[3]{\it\small Spring 2004}
+\colplacechunks
+\colchunk[2]{%
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=0cm, topsep=0cm, partopsep=0cm, listparindent=0cm, style=nextline]
+\item[\textbullet] {\it Independent Study:} Micro-kernels and the ZINC Linux Kernel Automatic Security System\\
+{\it Advisor:} Dr. Hugh Maynard\\
+\end{itemize}
+%\setlength{\parskip}{\baselineskip}
+}
+\colchunk[3]{\it\small Fall 2003}
+\colplacechunks
+\colchunk[1]{\sc\bfseries Research\\Interests}
+\colchunk[2]{%
+Machine learning, statistical pattern recognition, natural language processing, intelligent systems, data \& text mining.
+\par \ }
+\colplacechunks
+\colchunk[1]{\sc\bfseries Clearance}
+\colchunk[2]{%
+{\bf Top Secret} -- Department of Defense\\
+SI/TK -- Big Safari Access
+\par \ }
+\colchunk[3]{\it\small 2008 - 2013}
+\colplacechunks
+\colchunk[1]{\sc\bfseries Certification}
+\colchunk[2]{%
+Red Hat Certified System Administrator, RHEL 5
+\par \ }
+\colchunk[3]{\it\small Fall 2010}
+\colplacechunks
+\colchunk[1]{\sc\bfseries Open Source}
+\colchunk[2]{%
+GitHub account: \url{http://www.github.com/s1n}
+%FIXME don't put the \par on the last item
+}
+\colplacechunks
+\end{parcolumns}
+\end{document}

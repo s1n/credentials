@@ -1,18 +1,16 @@
 \documentclass{credentials}
 
 \usepackage{fontspec}
-\usepackage[usenames,dvipsnames]{color}
 \usepackage{xunicode}
 \usepackage{xltxtra}
-\usepackage{color}
 
 %set a font from the system (requires XeTeX)
 % Uses font(s): Linux Libertine: http://www.linuxlibertine.org
 \setmainfont[Mapping=tex-text]{Linux Libertine}
 \renewcommand{\authorfont}{\setmainfont[Mapping=tex-text]{Linux Libertine}\sc\bfseries\Huge}
 \renewcommand{\subheaderfont}{\setmainfont[Mapping=tex-text]{Linux Libertine}}
-\renewcommand{\categoryfont}{\setmainfont[Mapping=tex-text]{Linux Libertine}\sc\bfseries}
-\renewcommand{\datefont}{\setmainfont[Mapping=tex-text]{Linux Libertine}\raggedleft\small\it}
+\renewcommand{\categoryfont}{\setmainfont[Mapping=tex-text,Color=000000]{Linux Libertine}\sc\bfseries}
+\renewcommand{\datefont}{\setmainfont[Mapping=tex-text,Color=000000]{Linux Libertine}\raggedleft\small\it}
 \fontsize{11}{12}\selectfont
 
 \author{Jason Michael Switzer}
@@ -53,7 +51,7 @@ A highly motivated and detailed Software Engineer with a wide range of knowledge
 }
 \colplacechunks
 \divider
-\colchunk[1]{\categoryfont Technical\\Skills\\ \\ {\normalfont \expert denotes \\ specialty}}
+\colchunk[1]{\categoryfont Technical\\Skills\\ \\ {\normalfont\normalcolor \expert denotes \\ specialty}}
 \colchunk[2]{%
 \setlength{\parskip}{0pt}
 \vspace{-\baselineskip}

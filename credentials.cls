@@ -20,12 +20,14 @@
 %pull in packages and setup each package as needed
 %fix the links so they are both printable and clickable.
 \usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{LinkColor}{RGB}{8,8,135}
 \hypersetup{
    colorlinks,
    citecolor=black,
    filecolor=black,
    linkcolor=black,
-   urlcolor=blue
+   urlcolor=LinkColor
 }
 \urlstyle{same}
 

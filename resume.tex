@@ -7,8 +7,8 @@
 \usepackage{color}
 
 %set a font from the system (requires XeTeX)
-%Linux Libertine
-\setmainfont[Mapping=tex-text]{Fontin}
+% Uses font(s): Linux Libertine: http://www.linuxlibertine.org
+\setmainfont[Mapping=tex-text]{Linux Libertine}
 \renewcommand{\authorfont}{\setmainfont[Mapping=tex-text]{Linux Libertine}\sc\bfseries\Huge}
 \renewcommand{\subheaderfont}{\setmainfont[Mapping=tex-text]{Linux Libertine}}
 \renewcommand{\categoryfont}{\setmainfont[Mapping=tex-text]{Linux Libertine}\sc\bfseries}
@@ -31,14 +31,14 @@
 
 \begin{document}
 
-\maketitle{4cm}{4cm}{4cm}
+\maketitle{>{\centering}p{4cm}>{\centering}p{4cm}>{\centering}p{3.4cm}}
 
 \par \
 
 \begin{content}
 \colchunk[1]{\categoryfont Qualification\\Summary}
 \colchunk[2]{%
-A highly motivated and detailed Software Engineer with a wide range of knowledge and capabilities. Master level knowledge of machine learning, intelligent systems, scalable distributed systems, multi-threaded environments, dead-lock avoidance, user interface design, and object oriented design patterns, and defect containment. Experienced in all aspects of the development life-cycle, including project estimation, design, implementation, documentation, regression unit testing, deployment, and legacy maintenance.
+A highly motivated and detailed Software Engineer with a wide range of knowledge and capabilities. Master level knowledge of machine learning, intelligent systems, scalable distributed systems, multi-threaded environments, dead-lock avoidance, user interface design, and object oriented design patterns, and defect containment. Experienced in all aspects of the development life-cycle, including project estimation, design, implementation, documentation, regression unit testing, deployment, and legacy maintenance. fi st
 \\
 
 {\em Areas of expertise include:}
@@ -53,11 +53,11 @@ A highly motivated and detailed Software Engineer with a wide range of knowledge
 }
 \colplacechunks
 \divider
-\colchunk[1]{\categoryfont Technical\\Skills\\ \\ {\expert denotes \\ specialty}}
+\colchunk[1]{\categoryfont Technical\\Skills\\ \\ {\normalfont \expert denotes \\ specialty}}
 \colchunk[2]{%
 \setlength{\parskip}{0pt}
 \vspace{-\baselineskip}
-\begin{itemize}[font=\sffamily\bf, leftmargin=1.9cm, topsep=0cm, style=nextline]
+\begin{itemize}[font=\sffamily\bf, leftmargin=1.9cm, noitemsep, nolistsep, style=nextline]
 \item[Languages] {\expert C}, {\expert C++}, {\expert Perl}, {\expert Java (1.4+)}, Markup (XML, HTML), \LaTeX, SQL, Python, C\#, Assembly (MIPS), Lua, ASP.Net, UML.
 \item[Theory] {\expert Qt}, Motif, Xlib, GTK+, {\expert boost}, {\expert pthreads}, OpenMP, MPI, .NET, JDK, {\expert Coverity}, JUnit, {\expert RMI}, {\expert Perl \& CPAN}, Perl/Tk, libogg, libflac, {\expert JNI}, {\expert POSIX}, J2EE, libpcap, cmake, Mudflap.
 \item[Toolkits] {\expert Network programming}, {\expert Multi-threadeding}, Security analysis, detection and prevention, Linux kernel module development, {\expert Linux / POSIX compliance}, {\expert Model-View-Controller design}, {\expert Machine learning / data mining}, {\expert Natural Language Processing}, {\expert Statistical reasoning}, {\expert Object-oriented design patterns}, Stenography, Regression \& unit testing, {\expert Technical documentation}, {\expert Debugging tools (gdb, valgrind, etc)}, {\expert CMMI development lifecycle}, {\expert Defect containment \& prevention}.
@@ -67,16 +67,16 @@ A highly motivated and detailed Software Engineer with a wide range of knowledge
 \divider
 \colchunk[1]{\categoryfont Education}
 \colchunk[2]{%
+{\bf M.S. in Computer Science - Intelligent Systems Track}\\
 University of Texas at Dallas\\
-M.Sc. in Computer Science - Intelligent Systems Track\\
 Thesis: {\em Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora.}
 \intradivider
 }
 \colchunk[3]{\datefont December 2010}
 \colplacechunks
 \colchunk[2]{%
+{\bf B.S. in Computer Science}\\
 University of Texas at San Antonio\\
-B.Sc. in Computer Science\\
 College of Sciences Dean's List: Fall 2003. Honor Roll: Spring 2004
 }
 \colchunk[3]{\datefont August 2005}
@@ -88,7 +88,7 @@ College of Sciences Dean's List: Fall 2003. Honor Roll: Spring 2004
 L-3 Communications -- Mission Integration Systems\\
 \setlength{\parskip}{0pt}
 \vspace{-\baselineskip}
-\begin{itemize}
+\begin{itemize}[font=\sffamily\bf, noitemsep, nolistsep, style=nextline]
 \item Core developer on the Tactical Reconnaissance platform (over 3 million SLOC). Operator workstation responsible for interfacing directly and indirectly to all hardware on the aircraft.
 \item Developer on wide variety of products, including operator workstation, high speed recording platform (patent pending), signal analysis platform, optics recording platform, and COTS bench test system.
 \item Collaborate with a large team and a code-base focusing on Human/Computer Interaction data collection and analysis products.
@@ -119,48 +119,60 @@ Secorp Technologies\\
 \divider
 \colchunk[1]{\categoryfont Publication}
 \colchunk[2]{%
-Switzer, Jason, Latifur Khan, Fahad Bin Muhaya. 2011. {\it Subjectivity Classification and Analysis of the ASRS Corpus.} In IEEE Society of Information Reuse and Integration, pages 136-141.\\
-Full Text: \url{http://www.voidreturn.com/pubs/IEEE\_IRI.pdf}.
+Switzer, Jason, Latifur Khan, Fahad Bin Muhaya. 2011. {\it Subjectivity Classification and Analysis of the ASRS Corpus.} In IEEE Society of Information Reuse and Integration, pages 136-141.
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=2.5cm, noitemsep, nolistsep, style=nextline]
+\item[Full Text] \url{http://www.voidreturn.com/pubs/IEEE\_IRI.pdf}.
+\end{itemize}
 \intradivider
 }
 \colchunk[3]{\datefont August 2011}
 \colplacechunks
 \colchunk[2]{%
-Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora\\
-Full Text: \url{http://www.voidreturn.com/pubs/SSCaAJHC.pdf}.\\
-Abstract: \url{http://www.voidreturn.com/pubs/SSCaAJHC\_Abstract.pdf}.
+Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=2.5cm, noitemsep, nolistsep, style=nextline]
+\item[Full Text] \url{http://www.voidreturn.com/pubs/SSCaAJHC.pdf}.
+\item[Abstract] \url{http://www.voidreturn.com/pubs/SSCaAJHC\_Abstract.pdf}.
+\end{itemize}
 }
 \colchunk[3]{\datefont December 2010}
 \colplacechunks
 \divider
 \colchunk[1]{\categoryfont Research}
 \colchunk[2]{%
-{\it Thesis:} Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora.\\
-{\it Advisor:} Dr. Latifur Khan.\\
-{\it Topic:} Natural Language Processing, Clustering, Subjectivity Classification, WordNet.
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=1.3cm, noitemsep, nolistsep, style=nextline]
+\item[Topic] Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora.
+\item[Advisor] Dr. Latifur Khan.
+\item[Topic] Natural Language Processing, Clustering, Subjectivity Classification, WordNet.
+\end{itemize}
 \intradivider
 }
 \colchunk[3]{\datefont Fall 2010}
 \colplacechunks
-%\colchunk[2]{%
-%Semi-supervised Subjectivity Classification and Application to Jargon Heavy Corpora.\\
-%Full Text: \url{http://www.voidreturn.com/pubs/SSCaAJHC.pdf}.\\
-%Abstract: \url{http://www.voidreturn.com/pubs/SSCaAJHC\_Abstract.pdf}.
-%\intradivider
-%}
-%\colchunk[3]{\datefont Submitted Fall 2010}
-%\colplacechunks
 \colchunk[2]{%
-{\it Independent Study:} Parallelization of Sparse Matrix Multiplication\\
-{\it Advisor:} Dr. Rajendra V. Boppana\\
-{\it Uncredited publication:} E. Brookes, R. V. Boppana and B. Demeler, Computing Large Sparse Multivariate Optimization Problems with an Application in Biophysics, Supercomputing, Nov. 2006.
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=1.3cm, noitemsep, nolistsep, style=nextline]
+\item[Title] Parallelization of Sparse Matrix Multiplication
+\item[Advisor] Dr. Rajendra V. Boppana
+\item[] E. Brookes, R. V. Boppana and B. Demeler, Computing Large Sparse Multivariate Optimization Problems with an Application in Biophysics, Supercomputing, Nov. 2006.
+\end{itemize}
 \intradivider
 }
 \colchunk[3]{\datefont Spring 2004}
 \colplacechunks
 \colchunk[2]{%
-{\it Independent Study:} Micro-kernels and the ZINC Linux Kernel Automatic Security System\\
-{\it Advisor:} Dr. Hugh Maynard
+\setlength{\parskip}{0pt}
+\vspace{-\baselineskip}
+\begin{itemize}[font=\sffamily\bf, leftmargin=1.3cm, noitemsep, nolistsep, style=nextline]
+\item[Title] Micro-kernels and the ZINC Linux Kernel Automatic Security System
+\item[Advisor] Dr. Hugh Maynard
+\end{itemize}
 }
 \colchunk[3]{\datefont Fall 2003}
 \colplacechunks

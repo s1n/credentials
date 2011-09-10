@@ -61,9 +61,9 @@
    Unknown Author}{%
    Use \protect\author\space to set it.}}
 
-\renewcommand{\maketitle}[3]{%
+\renewcommand{\maketitle}[1]{%
    \begin{center}
-      \begin{tabular}{>{\centering}p{#1}|>{\centering}p{#2}|>{\centering}p{#3}}
+      \begin{tabular}{#1}
          \multicolumn{3}{c}{{\authorfont\@author}}\tabularnewline
          {\subheaderfont \career} & {\subheaderfont \email} & {\subheaderfont \website} \centering{}\tabularnewline
       \end{tabular}
